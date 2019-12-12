@@ -5,9 +5,16 @@ $yellow = "\033[1;33m";
 $white = "\033[1;37m";
 $normal = "\033[0m";
 echo "\n$yellow
-echo "\n     $yellow:::$white İnitScan v1.0   $normal";
-echo "\n     $yellow:::$white Yapımcı : Mehmet Demirbaş / Slayeri4   $normal";
-echo "\n     $yellow:::$white İnitScan v1.0 | O~WEB Scanner $normal";
+$yellow _____     __      __    ______                                    $normal
+$yellow/\  __`\  /\ \  __/\ \  /\  __ \                                   $normal
+$yellow\ \ \/\ \ \ \ \/\ \ \ \ \ \ \,\_\      ____     ____       ____    $normal
+$yellow \ \ \ \ \ \ \ \ \ \ \ \ \/_____ \    /'___\   /'__`\     / _ `\   $normal
+$yellow  \ \ \_\ \ \ \ \_\ \_\ \  /\`\_\ \  /\ \__/  /\ \L\.\_  /\ \/\ \  $normal
+$yellow   \ \_____\ \ \____x___/  \ \_____\ \ \____\ \ \__/.\_\ \ \_\ \_\ $normal
+$yellow    \/_____/  \,/__//__/    \/_____/  \/____/  \/__/\/_/  \/_/\/_/ $normal";
+echo "\n     $yellow:::$white İnitscan v1.0 - 12 Aralık 2019 (11:30)      $normal";
+echo "\n     $yellow:::$white Author: Slayeri4 | Codename: Alone.  $normal";
+echo "\n     $yellow:::$white Team: İnitack Security | O~WEB Scanner $normal";
 echo $yellow."\n     [#]$white Enter Website to Scan$red(".$white."ex: www.example.com$red):$normal ";
 $webURL = trim(fgets(STDIN));
 if ( $webURL != NULL ) {
