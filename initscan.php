@@ -5,17 +5,16 @@ $yellow = "\033[1;33m";
 $white = "\033[1;37m";
 $normal = "\033[0m";
 echo "\n$yellow
-$yellow _____     __      __    ______                                    $normal
-$yellow/\  __`\  /\ \  __/\ \  /\  __ \                                   $normal
-$yellow\ \ \/\ \ \ \ \/\ \ \ \ \ \ \,\_\      ____     ____       ____    $normal
-$yellow \ \ \ \ \ \ \ \ \ \ \ \ \/_____ \    /'___\   /'__`\     / _ `\   $normal
-$yellow  \ \ \_\ \ \ \ \_\ \_\ \  /\`\_\ \  /\ \__/  /\ \L\.\_  /\ \/\ \  $normal
-$yellow   \ \_____\ \ \____x___/  \ \_____\ \ \____\ \ \__/.\_\ \ \_\ \_\ $normal
-$yellow    \/_____/  \,/__//__/    \/_____/  \/____/  \/__/\/_/  \/_/\/_/ $normal";
-echo "\n     $yellow:::$white İnitscan v1.0 - 12 Aralık 2019 (11:30)      $normal";
-echo "\n     $yellow:::$white Author: Slayeri4 | Codename: Alone.  $normal";
-echo "\n     $yellow:::$white Team: İnitack Security | O~WEB Scanner $normal";
-echo $yellow."\n     [#]$white Enter Website to Scan$red(".$white."ex: www.example.com$red):$normal ";
+$yellow  _________.__                            .__   _____  
+$yellow /   _____/|  | _____  ___.__. ___________|__| /  |  | 
+$yellow \_____  \ |  | \__  \<   |  |/ __ \_  __ \  |/   |  |_
+$yellow /        \|  |__/ __ \\___  \  ___/|  | \/  /    ^   /
+$yellow/_______  /|____(____  / ____|\___  >__|  |__\____   | 
+$yellow        \/           \/\/         \/              |__|$normal";
+echo "\n     $yellow:::$red İnitscan v1.0 - 12 Aralık 2019 (11:30)      $normal";
+echo "\n     $yellow:::$red Yazan: Slayeri4 | 4 Atlı  $normal";
+echo "\n     $yellow:::$red Takım: İnitack Security | O~WEB Tarama V1.0 $normal";
+echo $yellow."\n     [slayeri4@root]$red Taramak Istediginiz Siteyi Giriniz$red(".$white."örnek: www.slayeri4.com$red):$normal ";
 $webURL = trim(fgets(STDIN));
 if ( $webURL != NULL ) {
 	echo "\n\n$yellow:::$white Whois Lookup$yellow:$normal\n";
@@ -50,9 +49,9 @@ if ( $webURL != NULL ) {
 	$httphgrabURL = "http://api.hackertarget.com/httpheaders/?q=".$webURL;
 	$httphgrabDATA = file_get_contents($httphgrabURL);
 	echo $httphgrabDATA;
-	echo "\n$yellow:::$white Thanks for Using our Program\n$yellow:::$white Have a Nice Day, Bye Bye$normal\n";
+	echo "\n$yellow:::$white Programı Kullandıgınız İcin Tesekurler :)\n$yellow:::$white Bye Bye$normal\n";
 }
 else {
-	echo "\n$red:::$white Please, Enter the Website to Scan$normal\n";
+	echo "\n$red:::$white Yeni Site İcin Enterlayın $normal\n";
 }
 ?>
